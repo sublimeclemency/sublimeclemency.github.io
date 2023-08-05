@@ -1,15 +1,14 @@
 -
-  icon: https://img.shields.io/badge/link-996.icu-red.svg
-  # 是否使用 Iconfont 的图标字体
+  icon: https://img.shields.io/badge/online%20sequencer-33ddff.svg
+  # use special font
   use_iconfont: false
-  name: 996.icu
-  # 为 true 时当且仅当图片无法加载时，使用名字替代。为 false 时始终显示名字。
+  # name is alt text to display when icon fails
+  name: onlinesequencer.net
   automatic_name: true
-  link: https://996.icu
-# 在下面添加更多外部链接
-# -
-#   icon: 
-#   use_iconfont:
-#   name:
-#   automatic_name:
-#   link: 
+  link: https://onlinesequencer.net
+-
+  icon: https://img.shields.io/badge/tor%20network-a833ff.svg
+  use_iconfont: false
+  name: torproject.org
+  automatic_name: true
+  link: https://torproject.org

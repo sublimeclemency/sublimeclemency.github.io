@@ -320,10 +320,12 @@ h1 + .post-meta {
         background-color: var(--toc-highlight) !important;
       }
     }
-
+    a {
+      padding-left: 2rem;
+    }
     ul {
       a {
-        padding-left: 2rem;
+        padding-left: 3rem;
       }
     }
   }

@@ -1,75 +1,72 @@
-# 网站设置
+# The Site Configuration
 
-# 导入主题
+# Import the theme
 theme: jekyll-theme-chirpy
 
-# 仅当你的站点类型是 Github Pages 项目并且没有自定义域名时，修改下面的值为 '/项目名'。
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
 baseurl: ""
 
-# 站点的语言 › https://www.w3.org/International/questions/qa-choosing-language-tags
-# 如果在文件夹 `_data/locales` 下存在同名文件，则布局语言也会改变，
-# 否则，布局语言使用默认值 'en'。
-lang: zh-CN
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
 
-# 修改为你的时区 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Australia/Melbourne
 
-# jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# --------------------------
-title: Nihil       # 主标题
 
-tagline: Nichts Hsu # 副标题
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
 
-description: >- # 由 seo meta 和 atom feed 使用
-  Nichts Hsu 的个人博客
+title: sublime clemency
 
-# 填入你的网站的协议和域名，例如，'https://username.github.io'
-url: "https://nihil.cc"
+tagline: my posts
 
-author: Nichts Hsu # 全名
+description: >- # used by seo meta and the atom feed
+  sublime clemency posts
 
+
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://sublimeclemency.github.io"
+img_path: /assets/img
 github:
-  username: NichtsHsu # Github 用户名
-
+  username: sublimeclemency
 twitter:
-  username: NichtsHsu # 推特用户名
+  username: sublimeclemency
 
 social:
-  # 改为你的全名。
-  # 这将会显示为帖子的默认作者以及页脚的版权所有者
-  name: Nichts Hsu
-  email: NichtsVonChaos@gmail.com # 邮箱地址
+  name: sublimeclemency
+  email: sublimeclemency@gmail.com
   links:
-    # 第一个链接将会作为版权所有者的链接
-    - https://nihil.cc/
-    - https://twitter.com/NichtsHsu # 推特主页
-    - https://github.com/NichtsHsu # Github 主页
-    # 取消注释以添加更多链接
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/sublimeclemency
+    - https://github.com/sublimeclemency
 
-google_site_verification: # 填入你的认证字符串
-
+google_site_verification: # fill in to your verification string
 # ↑ --------------------------
-# `jekyll-seo-tag` 设置结束
+# The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # 填入你的 Google Analytics ID
+  id: G-LF1FS4QWGN
+  # Google Analytics pageviews report settings
+  pv:
+    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
+    cache_path: # the local PV cache data, friendly to visitors from GFW region
 
-# 设置首选配色方案
+# Prefer color scheme setting.
 #
-# 提示: 保留空白会跟随系统的默认首选配色，并且在侧边栏的底部会出现
-# 一个可以转换亮色主题和暗色主题的按钮。
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
 #
-# 可用选项:
+# Available options:
 #
-#     light  - 使用亮色方案
-#     dark   - 使用暗色方案
-#
-theme_mode: # [light|dark]
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+theme_mode:
 
 # 启用动画背景特效
-backgroud_animation: false
+backgroud_animation: true
 
 # 启用鼠标点击特效
 mouse_click_effect: false
@@ -82,7 +79,7 @@ mouse_click_effect: false
 img_cdn: ""
 
 # 侧边栏的头像，支持本地或 CROS 资源
-avatar: /avatar.png
+avatar: /index.jpg
 
 # 设置显示右侧边栏的内容
 panel:
@@ -99,35 +96,33 @@ panel:
     # 热门标签
     trending_tags: false
     # 外部链接
-    external_links: true
+    external_links: false
     # 目录
     toc: true
 
 comments:
-  active: # 帖子评论区全局开关，例如，'disqus'。保持为空表示禁用
-  # active 选项可以是如下：
-  # disqus 评论系统 > https://disqus.com/
+  active: utterances
   disqus:
-    shortname: # 填入你的 disqus shorname › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances 评论系统 › https://utteranc.es/
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <Github 用户名>/<仓库名>
-    issue_term: # < 链接 | 路径 | 标题 | ...>
-  # Waline 评论系统 › https://waline.js.org/
+    repo: sublimeclemency/utterances # <gh-username>/<repo>
+    issue_term: url # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
   waline:
     server: # Vercal 服务端地址
-    placeholder: 说点什么吧！ # 空白评论框时显示的文字
+    placeholder: say something! # 空白评论框时显示的文字
     avatar: mp # 默认头像  › https://waline.js.org/guide/client/avatar.html
-  # Giscus 选项 › https://giscus.app
   giscus:
-    repo: # <Github 用户名>/<仓库名>
+    repo: # <gh-username>/<repo>
     repo_id:
     category:
     category_id:
-    mapping: # 可选项，默认为 'pathname'
-    input_position: # 可选项，默认为 'bottom'
-    lang: # 可选项，默认为 `site.lang` 的值
-    reactions_enabled: # 可选项，默认为 1
+    mapping: # optional, default to 'pathname'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
 
 # 自托管静态资产，可选 › https://github.com/cotes2020/chirpy-static-assets
 assets:
@@ -141,7 +136,7 @@ pwa:
   enabled: true # PWA 特性选项
 
 # 每一页的帖子数量
-paginate: 10
+paginate: 9
 
 # ------------ 下面的设置不建议修改 ------------------
 
@@ -161,6 +156,7 @@ collections:
     output: true
     sort_by: order
 
+
 defaults:
   - scope:
       path: "" # 空字符串意味着项目里的所有文件
@@ -177,13 +173,14 @@ defaults:
       # 不要改变它除非你是 Jekyll 以及 Web 开发的专家，
       # 或者你认为自己足够聪明可以在此模板中修改为其他的相对路径。
       permalink: /posts/:title/
+      applause_button: true
   - scope:
       path: _drafts
     values:
       comments: false
   - scope:
       path: ""
-      type: tabs # 参考 `site.collections`
+      type: tabs # see `site.collections`
     values:
       layout: page
       permalink: /:title/
@@ -195,7 +192,6 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
-
 sass:
   style: compressed
 
