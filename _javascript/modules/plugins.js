@@ -9,3 +9,4 @@ export { runCpp } from './components/run-cpp';
 export { runJavascript } from './components/run-javascript';
 export { runPython } from './components/run-python';
 export { runRust } from './components/run-rust';
+export { getClapCounts, getClapCountsForCats } from './components/clap-counts';

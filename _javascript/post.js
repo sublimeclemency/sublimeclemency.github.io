@@ -5,6 +5,7 @@ import {
   initLocaleDatetime,
   initClipboard,
   toc,
+  getClapCounts,
   highlightLines,
   runCpp,
   runJavascript,
@@ -25,3 +26,4 @@ runCpp();
 runJavascript();
 runPython();
 runRust();
+getClapCounts();

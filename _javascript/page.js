@@ -7,7 +7,8 @@ import {
   runCpp,
   runJavascript,
   runPython,
-  runRust
+  runRust,
+  getClapCounts
 } from './modules/plugins';
 
 basic();
@@ -21,3 +22,4 @@ runCpp();
 runJavascript();
 runPython();
 runRust();
+getClapCounts();
