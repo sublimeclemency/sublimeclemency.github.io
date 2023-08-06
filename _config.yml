@@ -19,12 +19,12 @@ timezone: Australia/Melbourne
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: sublime clemency
+title: posts
 
-tagline: my posts
+tagline: sublimeclemency
 
 description: >- # used by seo meta and the atom feed
-  sublime clemency posts
+  posts by sublimeclemency
 
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
